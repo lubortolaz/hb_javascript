@@ -45,3 +45,11 @@ console.warn("FOREACH");
 tab.forEach(line => {
 	console.log(`Prénom : ${line.prenom} | Age : ${line.age}`);
 })
+
+// do while
+console.warn("DO WHILE");
+i = 0;
+do{
+  console.log(`Prénom : ${tab[i].prenom} | Age : ${tab[i].age}`);
+  i++;
+} while (i<tab.length)
