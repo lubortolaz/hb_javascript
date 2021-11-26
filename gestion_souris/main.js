@@ -15,12 +15,16 @@ function removeImportantGood(){
 }
 
 function good(){
-    RECT.classList.toggle('good');
+    RECT.classList.add('good');
 }
 
 document.querySelector('#toggle-rectangle').addEventListener('click',hide);
 
+//sur le rectangle -> quand la souris rentre -> becomeRed
 RECT.addEventListener('mouseover',important);
+
+//sur le rectangle -> quand la souris sort -> becomeBlue
 RECT.addEventListener('mouseout',removeImportantGood);
 
+//sur le rectangle -> au double clic -> becomeBeige
 RECT.addEventListener('dblclick',good);
