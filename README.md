@@ -38,4 +38,13 @@ Manipuler un tableau.
 Manipuler les différentes interaction: alert, prompt et confirm
 ## Sélecteur de photos
 [Enoncé](https://haudrey.notion.site/S-lecteur-de-photos-nonc-07096b2ab7c84fff8f0096ef537ca389)
+## Page builder
+[Enoncé](https://haudrey.notion.site/Page-builder-nonc-7a5818e798874ffab49f66598c5336fb)
+## Liste de course et DOM
+[Enoncé](https://haudrey.notion.site/Liste-de-course-DOM-nonc-6cfa5cd9fa65416a87f826c7d2844e79)
+## Carousel de photos
+[Enoncé](https://haudrey.notion.site/Carrousel-de-photos-nonc-ca56267ee79e42e99e4e172c36380e9d)
+## Tarot
+
+## Loto
 
