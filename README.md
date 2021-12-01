@@ -45,6 +45,18 @@ Manipuler les différentes interaction: alert, prompt et confirm
 ## Carousel de photos
 [Enoncé](https://haudrey.notion.site/Carrousel-de-photos-nonc-ca56267ee79e42e99e4e172c36380e9d)
 ## Tarot
-
+[Enoncé](https://haudrey.notion.site/Tarot-nonc-0ab139526ae0412abb70a805b90365d0)
+Cet exercice a pour but de manipuler les ensembles de données #set.
 ## Loto
+[Enoncé](https://haudrey.notion.site/Loto-nonc-1b3142ecb78148709621b853a556309b)
+Le but de cet exercice va être de créer un tirage de loto.
+## Load More Bouton
+[Enoncé](https://haudrey.notion.site/Load-more-bouton-nonc-0152c8b6299941b4a17861e41bb33f13)
+On souhaite créer un système de bouton "voir plus" à partir d'un tableau de données listant des dates de concert.
+## Carnet d'adresse (jQuery)
+[Enoncé](https://haudrey.notion.site/Carnet-d-adresse-nonc-04eb42958f87493f8377a86c797a0103)
+Dans cet exercice, nous allons continuer de voir la manipulation du DOM en utilisant jQuery.
+## Retranscription de texte (jQuery)
+[Enoncé](https://haudrey.notion.site/Retranscription-de-texte-nonc-21c1a954955d4519b169f5f06b0d6e70)
+Dans cet exercice, nous allons voir comment manipuler les chaines de caractères en utilisant jQuery.
 

@@ -1,5 +1,13 @@
 'use strict';
 
+/***
+ *    ██    ██  █████  ██████  ██  █████  ██████  ██      ███████ ███████
+ *    ██    ██ ██   ██ ██   ██ ██ ██   ██ ██   ██ ██      ██      ██     
+ *    ██    ██ ███████ ██████  ██ ███████ ██████  ██      █████   ███████
+ *     ██  ██  ██   ██ ██   ██ ██ ██   ██ ██   ██ ██      ██           ██
+ *      ████   ██   ██ ██   ██ ██ ██   ██ ██████  ███████ ███████ ███████
+ */
+
 const BTN_ADD = document.querySelector('#submit');
 const BTN_DEL_ALL = document.querySelector('#delete');
 const BTN_DEL_ONE = document.querySelector('#deleteOne');
@@ -11,6 +19,14 @@ const UL = document.querySelector('ul.list');
 const H2 = document.querySelector('h2');
 
 let items = [];
+
+/***
+ *    ███████ ██    ██ ███    ██  ██████ ████████ ██  ██████  ███    ██ ███████
+ *    ██      ██    ██ ████   ██ ██         ██    ██ ██    ██ ████   ██ ██     
+ *    █████   ██    ██ ██ ██  ██ ██         ██    ██ ██    ██ ██ ██  ██ ███████
+ *    ██      ██    ██ ██  ██ ██ ██         ██    ██ ██    ██ ██  ██ ██      ██
+ *    ██       ██████  ██   ████  ██████    ██    ██  ██████  ██   ████ ███████
+ */
 
 /**
  * Ajoute l'item entré en paramètre dans la liste ul et dans le tableau items
@@ -27,7 +43,8 @@ function addItem(item){
 /**
  * Fonction appelée lorsqu'on clique sur "Ajouter"
  */
-function btnAddClick(){
+function btnAddClick(e){
+    e.preventDefault();
     let item = TO_ADD.value;
     if(item !== '' && !items.includes(item)){
         addItem(item);
@@ -38,7 +55,8 @@ function btnAddClick(){
 /**
  * Fonction appelée lorsqu'on clique sur "Vider"
  */
-function btnDeleteAll(){
+function btnDeleteAll(e){
+    e.preventDefault();
     UL.innerHTML = '';
     items = [];
     displayList();
@@ -62,7 +80,8 @@ function deleteOneItem(){
 /**
  * Fonction appelée lorsqu'on clique sur "Supprimer 1 aliment"
  */
-function btnDeleteOne(){
+function btnDeleteOne(e){
+    e.preventDefault();
     togglePopup();
     BTN_TO_DEL_ONE.addEventListener('click', deleteOneItem);
     document.querySelector('h3 span').addEventListener('click', togglePopup);
@@ -82,6 +101,14 @@ function togglePopup(){
 function displayList(){
     H2.textContent = `La liste contient ${items.length} produit(s)`;
 }
+
+/***
+ *     ██████  ██████  ██████  ███████
+ *    ██      ██    ██ ██   ██ ██     
+ *    ██      ██    ██ ██   ██ █████  
+ *    ██      ██    ██ ██   ██ ██     
+ *     ██████  ██████  ██████  ███████
+ */
 
 // Déclencher le code une fois la page HTML chargée
 document.addEventListener("DOMContentLoaded", function(){
