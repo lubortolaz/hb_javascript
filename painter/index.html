@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<!-- Balises Meta -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>paint</title>
+
+	<!-- Libraries CSS et polices -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+	<!-- Feuille CSS du projet -->
+	<link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+	<main class="container">
+		<h1>
+			<i class="fa fa-paint-brush"></i>
+			Paint
+		</h1>
+
+		<div id="img-container">
+			<img src="" id="img-saved">
+		</div>
+
+		<section>
+			<canvas width="870" height="400" id="ardoise"></canvas>
+			<!--
+		 -->
+			<div id="palette-container">
+				<canvas width="300" height="400" id="palette"></canvas>
+				<span class="zoom"></span>
+			</div>
+		</section>
+		<nav>
+			<ul>
+				<li>
+					<h6>Outils</h6>
+					<span class="btn" id="eraser">
+						<i class="fa fa-eraser"></i>
+					</span>
+					<span class="btn" id="saver">
+						<i class="fa fa-floppy-o"></i>
+					</span>
+				</li>
+				<li>
+					<h6>Couleur</h6>
+					<span class="round color-1" id="black" data-color="hsl(0, 100%, 0%)"></span>
+					<span class="round color-2" id="purple" data-color="hsl(288, 100%, 50%)"></span>
+					<span class="round color-3" id="red" data-color="hsl(360, 100%, 50%)"></span>
+					<span class="round color-4" id="yellow" data-color="hsl(59, 100%, 50%)"></span>
+					<span class="round color-5" id="green" data-color="hsl(120, 100%, 50%)"></span>
+					<span class="round color-6" id="turquoise" data-color="hsl(180, 100%, 50%)"></span>
+					<span class="round color-7" id="blue" data-color="hsl(240, 100%, 50%)"></span>
+				</li>
+				<li>
+					<h6>Epaisseur</h6>
+					<span class="btn epaisseur" id="fin" data-thickness="1">Fin</span>
+					<span class="btn epaisseur" id="normal" data-thickness="7">Normal</span>
+					<span class="btn epaisseur" id="epais" data-thickness="25">Epais</span>
+				</li>
+			</ul>
+		</nav>
+
+	</main>
+
+	<!-- Scripts JS -->
+	<!-- Classes -->
+	<script src="js/App.class.js"></script>
+	<script src="js/Ardoise.class.js"></script>
+	<script src="js/Palette.class.js"></script>
+	<script src="js/Stylo.class.js"></script>
+
+	<script module src="js/main.js"></script>
+</body>
+
+</html>

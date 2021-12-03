@@ -1,0 +1,151 @@
+body {
+  min-height: calc(100vh - 100px);
+  margin: 0;
+  background: url(https://audreyhossepian.fr/img/logo.png),
+    linear-gradient(40deg, #fc466b, #3f5efb);
+  background-position: 95% 90%;
+  background-repeat: no-repeat;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 50px;
+  color: white;
+}
+* {
+  box-sizing: border-box;
+}
+.container {
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+section {
+  border-bottom: 1px solid #ccc;
+}
+canvas {
+  display: inline-block;
+}
+canvas:first-of-type {
+  margin-left: 0;
+}
+
+#palette {
+  cursor: none;
+}
+
+h1,
+h6 {
+  margin: 0.8em 0;
+}
+
+nav {
+  font-size: 1.4rem;
+  padding: 30px 0;
+}
+nav h6 {
+  display: inline-block;
+  min-width: 80px;
+}
+section {
+  display: flex;
+}
+
+.btn {
+  display: inline-block;
+  margin: 0 2px;
+  border-radius: 2px;
+  border: 1px solid #ccc;
+  padding: 5px;
+  background-color: #fff;
+  color: #fc466b;
+  cursor: pointer;
+
+  transition: all 0.5s ease;
+}
+.btn:hover,
+.btn:focus {
+  background-color: #ccc;
+  border-color: #aaa;
+}
+
+.round {
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  margin: 0 6px;
+
+  cursor: pointer;
+}
+.round:hover,
+.round:focus {
+  outline: 2px solid #aaa;
+}
+
+.color-1 {
+  background-color: hsl(0, 100%, 0%);
+}
+.color-2 {
+  background-color: hsl(288, 100%, 50%);
+}
+.color-3 {
+  background-color: hsl(360, 100%, 50%);
+}
+.color-4 {
+  background-color: hsl(59, 100%, 50%);
+}
+.color-5 {
+  background-color: hsl(120, 100%, 50%);
+}
+.color-6 {
+  background-color: hsl(180, 100%, 50%);
+}
+.color-7 {
+  background-color: hsl(240, 100%, 50%);
+}
+
+#palette-container {
+  display: inline-block;
+  width: 300px;
+  height: 400px;
+  position: relative;
+}
+
+#img-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 100%;
+  left: 0;
+  z-index: 1;
+  overflow: hidden;
+
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: all 0.5s ease;
+}
+
+#img-saved {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.zoom {
+  display: none;
+  position: absolute;
+  /* left: -99999px;
+	top:  -99999px; */
+  width: 60px;
+  height: 60px;
+  background-color: blue;
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-width: 3px;
+  border-color: white;
+  border-style: solid;
+  pointer-events: none;
+}
